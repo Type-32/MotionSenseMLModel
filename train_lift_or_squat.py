@@ -49,5 +49,5 @@ print(f"F1-score: {f1:.4f}")
 
 print('Saving model...')
 # Save the trained model to a file
-joblib.dump(rf_model, 'motionsense_squad_or_lift_model.pkl')
+joblib.dump(rf_model, 'motionsense_sor_model_1.1k.pkl')
 print('Model saved.')

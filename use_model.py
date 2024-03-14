@@ -7,7 +7,7 @@ import serial
 
 # Load the saved model
 print("Loading model...")
-loaded_model = joblib.load('motionsense_squad_or_lift_model.pkl')
+loaded_model = joblib.load('motionsense_sor_model_1.1k.pkl')
 print("Model loaded.")
 
 # Set the serial port and baud rate
