@@ -1,3 +1,4 @@
+import joblib
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -45,3 +46,8 @@ print(f"Accuracy: {accuracy:.4f}")
 print(f"Precision: {precision:.4f}")
 print(f"Recall: {recall:.4f}")
 print(f"F1-score: {f1:.4f}")
+
+print('Saving model...')
+# Save the trained model to a file
+joblib.dump(rf_model, 'motionsense_squad_or_lift_model.pkl')
+print('Model saved.')
